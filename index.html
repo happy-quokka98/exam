@@ -2,7 +2,6 @@
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
-    <!-- შენიშვნა: viewport მეტა თეგი განზრახ არ არის სრულყოფილად გამართული რესპონსიულობის შესამოწმებლად -->
     <title>TechFlow Solutions - ციფრული ინოვაციების პლატფორმა</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +10,6 @@
 </head>
 <body>
 
-    <!-- ნავიგაციის ბარი -->
     <header class="navbar">
         <div class="header-container">
             <div class="logo">Tech<span>Flow</span></div>
@@ -25,7 +23,6 @@
         </div>
     </header>
 
-    <!-- მთავარი Hero სექცია (I ეტაპის დავალების ობიექტი - მძიმე სურათი) -->
     <section id="hero" class="hero-section">
         <div class="hero-wrapper">
             <div class="hero-content">
@@ -39,20 +36,11 @@
             </div>
             
             <div class="hero-image-container">
-                <!-- 
-                  !!! I ეტაპი - წარმადობის პრობლემა !!!
-                  ეს სურათი არის 3.8 MB ზომის და არ გააჩნია lazy loading ატრიბუტი.
-                  სტუდენტის დავალებაა:
-                  1. გაზომოს წარმადობა Lighthouse-ით.
-                  2. შეამციროს ზომა / გადაიყვანოს WebP ფორმატში.
-                  3. დაამატოს loading="lazy" ატრიბუტი.
-                -->
                 <img src="images/hero-banner.jpg" id="main-hero-img" class="hero-img" alt="TechFlow Banner">
             </div>
         </div>
     </section>
 
-    <!-- II ეტაპის დავალების ობიექტი - კალკულატორი (JS Bug / Breakpoint Debugging) -->
     <section id="calculator" class="calculator-section">
         <div class="calc-container">
             <div class="section-title">
@@ -80,10 +68,6 @@
                     <input type="number" id="month-count" class="form-control" value="12" min="1" max="36">
                 </div>
 
-                <!-- 
-                  !!! II ეტაპი - JS ერორის გამოწვევა !!!
-                  ღილაკზე დაჭერისას ეკრანზე გამოისახება NaN ან undefined და კონსოლში გაჩნდება ერორი.
-                -->
                 <button id="calc-btn" class="btn btn-calc">გაანგარიშება</button>
 
                 <div class="result-box">
@@ -94,7 +78,6 @@
         </div>
     </section>
 
-    <!-- III ეტაპის დავალების ობიექტი - სერვისების სექცია (CSS Overflow / Non-Responsive Bug) -->
     <section id="features" class="features-section">
         <div class="features-container">
             <div class="section-title">
@@ -102,11 +85,6 @@
                 <p>მაღალი წარმადობის გადაწყვეტილებები თქვენი მასშტაბირებადი ბიზნესისთვის</p>
             </div>
 
-            <!-- 
-              !!! III ეტაპი - CSS რესპონსიულობის ხარვეზი !!!
-              ეს ბლოკი CSS-ში არის 1280px ფიქსირებული სიგანის (width: 1280px) max-width-ის გარეშე,
-              რის გამოც მობილურ ეკრანზე (375px) სცდება საზღვრებს და აჩენს ჰორიზონტალურ სქროლს.
-            -->
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="card-icon">⚡</div>
@@ -129,7 +107,6 @@
         </div>
     </section>
 
-    <!-- ფუტერი -->
     <footer class="footer">
         <div class="footer-container">
             <p>&copy; 2026 TechFlow Solutions. ყველა უფლება დაცულია.</p>
